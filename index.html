@@ -3,32 +3,328 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Início · Bora Patota</title>
-<meta name="description" content="Bora Patota: o app da sua patota de futebol.">
+<title>Bora Patota · o app da sua patota de futebol</title>
+<meta name="description" content="Lista de presença, sorteio dos times, súmula do jogo, classificação, craque do jogo e o caixa da patota com Pix. Tudo num app só.">
+<meta property="og:title" content="Bora Patota · o app da sua patota de futebol">
+<meta property="og:description" content="Lista de presença, sorteio, súmula, classificação, craque do jogo e o caixa da patota com Pix.">
+<meta property="og:image" content="https://borapatota.github.io/icone.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1120">
 <link rel="icon" href="icone.png">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
-<header>
-  <a class="marca" href="index.html"><img src="icone.png" alt="" width="44" height="44"><span>Bora Patota</span></a>
-  <nav><a href="termos.html">Termos de Uso</a><a href="privacidade.html">Privacidade</a><a href="excluir-conta.html">Excluir conta</a></nav>
-</header>
-<main>
-<section class="capa">
-  <img src="icone.png" alt="Ícone do Bora Patota" width="120" height="120">
-  <h1>Bora Patota</h1>
-  <p class="lead">O app da sua patota de futebol: lista de presença, sorteio dos times, súmula do jogo, classificação, craque do jogo e o caixa da patota.</p>
-</section>
-<ul class="links">
-  <li><a href="termos.html">Termos de Uso</a></li>
-  <li><a href="privacidade.html">Política de Privacidade</a></li>
-  <li><a href="excluir-conta.html">Excluir sua conta</a></li>
-</ul>
-<p class="dica">Contato e suporte: <a href="mailto:borapatota@gmail.com">borapatota@gmail.com</a></p>
 
-</main>
-<footer>
-  <p>Bora Patota · Emerson Marciano da Silva · <a href="mailto:borapatota@gmail.com">borapatota@gmail.com</a></p>
+<header class="topo">
+  <a class="marca" href="index.html"><img src="icone.png" alt="" width="40" height="40"><span>Bora Patota</span></a>
+  <nav>
+    <a href="#recursos">Recursos</a>
+    <a href="#planos">Planos</a>
+    <a href="#duvidas">Dúvidas</a>
+  </nav>
+</header>
+
+<!-- ============ CAPA ============ -->
+<section class="capa">
+  <div class="capa-texto">
+    <p class="selo">⚽ Para patotas de futebol</p>
+    <h1>Chega de lista no WhatsApp.<br><span>Sua patota organizada num app só.</span></h1>
+    <p class="lead">Presença confirmada, times sorteados, súmula do jogo, classificação, craque da rodada e o caixa da patota com Pix. O organizador cuida de tudo em poucos toques, e a galera recebe os avisos no celular.</p>
+    <div class="acoes">
+      <a class="botao" href="mailto:borapatota@gmail.com?subject=Quero%20usar%20o%20Bora%20Patota%20na%20minha%20patota">Quero usar na minha patota</a>
+      <a class="botao secundario" href="#recursos">Ver o que o app faz</a>
+    </div>
+    <p class="nota">📱 Android e iPhone · em breve na Google Play e na App Store · 30 dias grátis do Premium</p>
+  </div>
+
+  <div class="capa-celular" aria-hidden="true">
+    <div class="celular">
+      <div class="tela">
+        <div class="app-topo"><span class="escudo">PS</span><b>Patota do Sábado</b></div>
+        <div class="cartao">
+          <small>PRÓXIMO JOGO</small>
+          <b class="grande">⚽ Sábado, 29/11 às 08:00</b>
+          <p>Você vai nesse jogo?</p>
+          <div class="duas">
+            <span class="opcao sim">✅ Vou</span>
+            <span class="opcao">❌ Não vou</span>
+          </div>
+          <p class="mini verde">16 vão · 2 convidados · 3 sem resposta</p>
+        </div>
+        <div class="cartao aviso">⭐ Votação do craque aberta! Toque para votar.</div>
+        <div class="cartao linha">🏆 Classificação da patota <span>›</span></div>
+        <div class="cartao linha">💰 Mensalidade e Pix <span>›</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section class="faixa">
+  <h2>Como funciona</h2>
+  <ol class="passos">
+    <li><b>1</b><h3>A patota cria a conta</h3><p>Nome, logo, cores, dia e horário do jogo. Em 2 minutos está pronto.</p></li>
+    <li><b>2</b><h3>Cadastra os jogadores</h3><p>Cole a lista do WhatsApp e o app separa os nomes sozinho. Quem baixar o app entra pelo @usuário.</p></li>
+    <li><b>3</b><h3>A galera confirma</h3><p>A lista abre no dia e hora combinados, cada um recebe o aviso e responde "vou" ou "não vou".</p></li>
+  </ol>
+</section>
+
+<!-- ============ RECURSOS ============ -->
+<section id="recursos" class="recursos">
+  <h2>Tudo o que a patota precisa</h2>
+  <p class="sub">Do "quem vai?" até o saldo do caixa.</p>
+
+  <!-- Lista de presença -->
+  <article class="recurso">
+    <div class="recurso-texto">
+      <p class="etiqueta">Grátis</p>
+      <h3>📋 Lista de presença que se organiza sozinha</h3>
+      <ul>
+        <li>A lista abre automaticamente no dia e hora que a patota escolher.</li>
+        <li>Todo mundo recebe um aviso no celular para confirmar.</li>
+        <li>Convidados entram junto, mostrando quem convidou.</li>
+        <li>O organizador vê na hora quem vai, quem não vai e quem falta responder.</li>
+      </ul>
+    </div>
+    <div class="celular pequeno" aria-hidden="true">
+      <div class="tela">
+        <div class="app-titulo">Lista de presença</div>
+        <div class="contagem"><span>✅ 16 vão</span><span>❌ 3</span><span>⏳ 3</span></div>
+        <p class="grupo-titulo">VÃO (16)</p>
+        <ul class="lista">
+          <li>🧤 Rafael</li><li>André</li><li>Bruno</li><li>Carlos</li>
+          <li>Diego <em>🎟️ conv. do Bruno</em></li><li>Felipe</li><li>Gustavo</li>
+        </ul>
+        <p class="grupo-titulo">SEM RESPOSTA (3)</p>
+        <ul class="lista apagada"><li>Henrique</li><li>Igor</li><li>João</li></ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- Sorteio -->
+  <article class="recurso invertido">
+    <div class="recurso-texto">
+      <p class="etiqueta">Grátis</p>
+      <h3>🎲 Sorteio de times equilibrado</h3>
+      <ul>
+        <li>Dois times com quem confirmou, com as cores que a patota escolher.</li>
+        <li>Um goleiro para cada lado e convidados divididos entre os times.</li>
+        <li>A lista fecha e todo mundo recebe o aviso: "você está no time Azul".</li>
+        <li>Compartilhe os times no grupo do WhatsApp com um toque.</li>
+      </ul>
+    </div>
+    <div class="celular pequeno" aria-hidden="true">
+      <div class="tela">
+        <div class="app-titulo">Times sorteados</div>
+        <div class="times">
+          <div class="time"><div class="faixa-time azul">🔵 Azul (6)</div>
+            <p>🧤 Rafael</p><p>André</p><p>Carlos</p><p>Felipe</p><p>Diego 🎟️</p><p>Leo</p></div>
+          <div class="time"><div class="faixa-time branco">⚪ Branco (6)</div>
+            <p>🧤 Marcos</p><p>Bruno</p><p>Gustavo</p><p>Igor</p><p>Paulo</p><p>Tiago 🎟️</p></div>
+        </div>
+        <div class="botao-app">📲 Compartilhar no WhatsApp</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Súmula -->
+  <article class="recurso">
+    <div class="recurso-texto">
+      <p class="etiqueta premium">Premium</p>
+      <h3>⏱️ Súmula do jogo, lance a lance</h3>
+      <ul>
+        <li>Placar ao vivo com gols, assistências e gol contra de cada jogador.</li>
+        <li>Marque também pênaltis, quem chegou atrasado, quem veio sem uniforme e quem furou.</li>
+        <li>Os patoteiros acompanham o placar pelo celular.</li>
+        <li>No fim, o resultado vai para o grupo com um toque.</li>
+      </ul>
+    </div>
+    <div class="celular pequeno" aria-hidden="true">
+      <div class="tela">
+        <div class="placar">
+          <div><span class="bola azul"></span>Azul</div>
+          <b>3 <i>×</i> 2</b>
+          <div><span class="bola branco"></span>Branco</div>
+        </div>
+        <p class="grupo-titulo">LANCES</p>
+        <ul class="lista">
+          <li>⚽ André <em>2 gols</em></li>
+          <li>⚽ Felipe <em>1 gol</em></li>
+          <li>👟 Carlos <em>2 assist.</em></li>
+          <li>⚽ Bruno <em>2 gols</em></li>
+          <li>🧤 Rafael <em>defendeu pênalti</em></li>
+          <li>⏰ Igor <em>atrasado</em></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- Classificação -->
+  <article class="recurso invertido">
+    <div class="recurso-texto">
+      <p class="etiqueta premium">Premium</p>
+      <h3>🏆 Classificação do jeito da sua patota</h3>
+      <ul>
+        <li>Tabela geral, mensal, trimestral, semestral e anual.</li>
+        <li>A patota escolhe quanto vale cada item: vitória, gol, assistência, craque, atraso, furão e mais 15 itens, com decimais.</li>
+        <li>Top 3 de artilheiros, garçons e quem mais venceu.</li>
+        <li>Compartilhe a tabela no grupo e alimente a resenha.</li>
+      </ul>
+    </div>
+    <div class="celular pequeno" aria-hidden="true">
+      <div class="tela">
+        <div class="app-titulo">Classificação · Novembro</div>
+        <table class="tabela">
+          <thead><tr><th>#</th><th>Jogador</th><th>P</th><th>J</th><th>G</th></tr></thead>
+          <tbody>
+            <tr><td>🥇</td><td>André</td><td>24</td><td>4</td><td>7</td></tr>
+            <tr><td>🥈</td><td>Carlos</td><td>21</td><td>4</td><td>3</td></tr>
+            <tr><td>🥉</td><td>Bruno</td><td>19</td><td>4</td><td>5</td></tr>
+            <tr><td>4</td><td>Felipe</td><td>16</td><td>3</td><td>2</td></tr>
+            <tr><td>5</td><td>Rafael 🧤</td><td>15</td><td>4</td><td>0</td></tr>
+            <tr><td>6</td><td>Gustavo</td><td>12</td><td>3</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+
+  <!-- Craque -->
+  <article class="recurso">
+    <div class="recurso-texto">
+      <p class="etiqueta premium">Premium</p>
+      <h3>⭐ Craque do jogo e perfil de cada jogador</h3>
+      <ul>
+        <li>Quando o jogo acaba, quem jogou vota no craque do time vencedor.</li>
+        <li>O mais votado ganha o título e os pontos de craque na classificação.</li>
+        <li>Perfil com foto, números, recordes e o histórico de jogos de cada um.</li>
+      </ul>
+    </div>
+    <div class="celular pequeno" aria-hidden="true">
+      <div class="tela">
+        <div class="app-titulo">⭐ Vote no craque</div>
+        <p class="mini">Azul venceu por 3 × 2 · votação aberta por 24h</p>
+        <ul class="votos">
+          <li class="marcado"><span>André</span><em>⚽⚽ · 5 votos</em></li>
+          <li><span>Carlos</span><em>👟👟 · 3 votos</em></li>
+          <li><span>Rafael 🧤</span><em>2 votos</em></li>
+          <li><span>Felipe</span><em>⚽ · 1 voto</em></li>
+        </ul>
+        <div class="botao-app">Confirmar meu voto</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Financeiro -->
+  <article class="recurso invertido">
+    <div class="recurso-texto">
+      <p class="etiqueta premium">Premium</p>
+      <h3>💰 O caixa da patota com Pix</h3>
+      <ul>
+        <li>Mensalidades criadas sozinhas todo mês, com isentos e valores diferentes.</li>
+        <li>O jogador copia a chave Pix no app e avisa "já paguei"; o organizador confirma.</li>
+        <li>Aviso automático no dia do vencimento e cobrança de quem está devendo.</li>
+        <li>Entradas, gastos (quadra, bola, juiz…) e o saldo sempre em dia.</li>
+        <li>O dinheiro não passa pelo app: o Pix vai direto para a patota.</li>
+      </ul>
+    </div>
+    <div class="celular pequeno" aria-hidden="true">
+      <div class="tela">
+        <div class="saldo"><small>💰 SALDO DO CAIXA</small><b>R$ 1.240,00</b></div>
+        <p class="grupo-titulo">MENSALIDADES · NOVEMBRO</p>
+        <ul class="lista">
+          <li>🕓 Bruno <em>avisou que pagou</em></li>
+          <li>❌ Igor <em>R$ 80,00</em></li>
+          <li>✅ André <em>R$ 80,00</em></li>
+          <li>✅ Carlos <em>R$ 80,00</em></li>
+          <li>✅ Felipe <em>R$ 80,00</em></li>
+          <li>➖ Rafael 🧤 <em>isento</em></li>
+        </ul>
+        <div class="botao-app">🔔 Lembrar quem está devendo</div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ PARA QUEM ============ -->
+<section class="faixa">
+  <h2>Um app, dois lados</h2>
+  <div class="lados">
+    <div class="lado">
+      <h3>👔 Para quem organiza</h3>
+      <p>Lista, sorteio, súmula, classificação e caixa num lugar só. Sem planilha, sem caderninho e sem cobrar ninguém no grupo.</p>
+    </div>
+    <div class="lado">
+      <h3>🏃 Para quem joga</h3>
+      <p>Confirma presença com um toque, recebe os avisos, vê o time, o placar, os próprios números e paga a mensalidade pelo Pix. <b>Para o jogador é sempre de graça.</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANOS ============ -->
+<section id="planos" class="planos">
+  <h2>Planos</h2>
+  <p class="sub">Só a patota assina. Todos os jogadores dela usam de graça.</p>
+  <div class="cartoes-planos">
+    <div class="plano">
+      <h3>Grátis</h3>
+      <p class="preco">R$ 0</p>
+      <p class="mini">para sempre</p>
+      <ul>
+        <li>✅ Agenda dos jogos</li>
+        <li>✅ Lista de presença com abertura automática e avisos</li>
+        <li>✅ Convidados</li>
+        <li>✅ Sorteio dos times e compartilhar no WhatsApp</li>
+        <li>✅ Jogos anteriores com os times</li>
+        <li>✅ Jogadores ilimitados, logo e cores da patota</li>
+      </ul>
+    </div>
+    <div class="plano destaque">
+      <p class="fita">30 dias grátis</p>
+      <h3>⭐ Premium</h3>
+      <p class="preco">R$ 19,90<small> por mês</small></p>
+      <p class="mini">ou <b>R$ 189,90 por ano</b> (equivale a R$ 15,83 por mês)</p>
+      <ul>
+        <li>✅ Tudo do plano Grátis</li>
+        <li>⏱️ Súmula do jogo: placar e lances de cada jogador</li>
+        <li>🏆 Classificação com períodos e pontuação personalizada</li>
+        <li>⭐ Votação do craque do jogo</li>
+        <li>👤 Perfil dos jogadores com fotos e recordes</li>
+        <li>💰 Financeiro: mensalidades com Pix, cobrança e caixa</li>
+      </ul>
+    </div>
+  </div>
+  <p class="nota">A assinatura é feita pela App Store ou pela Google Play e pode ser cancelada quando quiser.</p>
+</section>
+
+<!-- ============ DÚVIDAS ============ -->
+<section id="duvidas" class="duvidas">
+  <h2>Dúvidas frequentes</h2>
+  <details><summary>O jogador precisa pagar alguma coisa?</summary><p>Não. Só a conta da patota assina o Premium. Os jogadores usam tudo o que a patota liberou, de graça.</p></details>
+  <details><summary>O dinheiro das mensalidades passa pelo app?</summary><p>Não. O app mostra a chave Pix da patota, o jogador paga pelo banco dele e avisa no app. O organizador confirma quando o dinheiro cai. Sem taxa sobre as mensalidades.</p></details>
+  <details><summary>Funciona no iPhone e no Android?</summary><p>Sim, nos dois. O Bora Patota chega em breve na App Store e na Google Play.</p></details>
+  <details><summary>E quem da patota não quiser baixar o app?</summary><p>Sem problema. O organizador cadastra o jogador pelo nome, marca a presença por ele e manda os times e a lista no grupo do WhatsApp.</p></details>
+  <details><summary>Se eu cancelar o Premium, perco os dados?</summary><p>Não. Nada é apagado: os recursos Premium só ficam bloqueados até a patota assinar de novo.</p></details>
+  <details><summary>Meus dados estão seguros?</summary><p>Sim. Seguimos a Lei Geral de Proteção de Dados, não vendemos dados e não mostramos anúncios. Veja a <a href="privacidade.html">Política de Privacidade</a>.</p></details>
+</section>
+
+<!-- ============ CHAMADA FINAL ============ -->
+<section class="final">
+  <img src="icone.png" alt="" width="88" height="88">
+  <h2>Bora organizar a sua patota?</h2>
+  <p>Fale com a gente e seja uma das primeiras patotas a usar o app.</p>
+  <a class="botao" href="mailto:borapatota@gmail.com?subject=Quero%20usar%20o%20Bora%20Patota%20na%20minha%20patota">Quero usar na minha patota</a>
+</section>
+
+<footer class="rodape">
+  <nav>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="excluir-conta.html">Excluir conta</a>
+    <a href="mailto:borapatota@gmail.com">borapatota@gmail.com</a>
+  </nav>
+  <p>© 2026 Bora Patota · Emerson Marciano da Silva</p>
 </footer>
+
 </body>
 </html>
